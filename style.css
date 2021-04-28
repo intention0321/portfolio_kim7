@@ -1,0 +1,500 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=M+PLUS+Rounded+1c:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300;400;500&family=Lato:wght@300&family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+.max-width {
+  max-width: 1300px;
+  padding: 0 80px;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+/*all similar content styling code*/
+section {
+  padding: 100px 0; /*양쪽에 여유생김*/
+}
+.about .about_content,
+.skills .skills_content,
+.contact .contact_content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  letter-spacing: 1px;
+  margin-top: 50px;
+}
+.about .title,
+.skills .title,
+.contact .title {
+  font-family: "Montserrat";
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+}
+
+/*navbar style*/
+.home-content {
+  /* 스크롤페이드인 스르륵나오게하는것*/
+  animation: fadeIn linear 5s;
+  -webkit-animation: fadeIn linear 5s;
+  -moz-animation: fadeIn linear 5s;
+  -o-animation: fadeIn linear 5s;
+  -ms-animation: fadeIn linear 5s;
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.navbar {
+  position: fixed; /*상위바 스크롤내려도 계속유지*/
+  width: 100%;
+  background: white;
+  padding: 0px;
+  z-index: 999; /*스크롤내려도 글씨가 투과되지않음*/
+}
+.navbar .max-width {
+  display: flex; /*세로본능이 가로본능으로*/
+  align-items: center; /* 가운데로오게*/
+  justify-content: space-between; /*그릇간에 간격을 일정하게 배분*/
+}
+.navbar .logo a {
+  color: black;
+  font-size: 40px;
+  font-weight: 500;
+  font-family: "Poppins";
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a {
+  color: rgb(137, 136, 136);
+  font-size: 17px;
+  font-weight: 500;
+  margin-left: 25px;
+  font-family: "Montserrat";
+  transition: color 0.3s ease;
+}
+.navbar .menu li a:hover {
+  color: rgb(200, 199, 199);
+}
+.menu_btn {
+  display: none;
+  color: rgb(192, 191, 191);
+  font-size: 23px;
+  cursor: pointer;
+}
+/*home style*/
+.home {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.nav_home {
+  width: 100vw;
+  height: 100vh;
+}
+.home .home-content {
+  display: flex;
+  font-family: "Kiwi Maru";
+  padding-left: 10px;
+  margin-top: 50px;
+}
+
+.home .home-content .text-1 {
+  font-size: 18px;
+  writing-mode: vertical-rl;
+  order: 3;
+  padding: 5px;
+}
+.home .home-content .text-2 {
+  font-size: 30px;
+  writing-mode: vertical-rl;
+  order: 2;
+}
+.home .home-content .text-2 span {
+  font-size: 50px;
+}
+
+/*about style*/
+
+#about {
+  background: #f9f9f9;
+}
+.about .max-width {
+  width: 100vw;
+  height: 100vh;
+}
+.about .about_content .column_left img {
+  height: 600px;
+  width: 400px;
+  object-fit: cover; /*사진이 종횡비를유지*/
+}
+.about .about_content .column_left {
+  width: 45%;
+}
+.about .about_content .column_right {
+  width: 55%;
+  position: relative;
+  margin-bottom: 100px;
+  font-family: "Kiwi Maru";
+}
+.about .about_content .column_right .text {
+  font-size: 30px;
+  margin-bottom: 10px;
+  letter-spacing: 1px; /*글자사이 간격*/
+}
+.about .about_content .column_right .text span {
+  text-decoration: underline rgb(214, 212, 212);
+}
+.about .about_content .column_right .text_ex {
+  font-size: 16px;
+  text-align: justify;
+  letter-spacing: 1px;
+}
+.about .about_content .column_right a {
+  display: inline-block;
+  border: 2px solid rgb(188, 187, 187);
+  font-size: 14px;
+  font-weight: 500;
+  padding: 15px 30px 15px 30px;
+  margin-top: 20px;
+  transition: all 0.25s ease;
+  color: black;
+}
+.about_content .column_right a:hover {
+  color: #f9f9f9;
+  background: rgb(188, 187, 187);
+}
+
+/*skills style*/
+#skills {
+  background: #fdfcfc;
+}
+.skills .max-width {
+  width: 100vw;
+  height: 100vh;
+}
+.skills .title {
+  margin-bottom: 30px;
+}
+.skills .skills_content .column_left,
+.skills .skills_content .column_right {
+  width: calc(50% - 30px); /*화면기준 반으로해서 30px만큼 뺀값*/
+}
+.skills .skills_content .column_left .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+.skills .skills_content .column_left p {
+  font-size: 16px;
+  font-family: "Kiwi Maru";
+}
+.skills .skills_content .column_right .bars {
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+}
+.skills .skills_content .column_right .info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/*그래프효과*/
+.line_html,
+.line_css,
+.line_java,
+.line_oracle,
+.line_japan {
+  background: rgb(232, 183, 191);
+}
+
+.line_html {
+  height: 5px;
+  width: 90%;
+  animation: html 7s infinite;
+}
+@keyframes html {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+.line_css {
+  height: 5px;
+  width: 70%;
+  animation: css 7s infinite;
+}
+@keyframes css {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+.line_java {
+  height: 5px;
+  width: 50%;
+  animation: java 7s infinite;
+}
+@keyframes java {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 50%;
+  }
+}
+.line_oracle {
+  height: 5px;
+  width: 60%;
+  animation: oracle 7s infinite;
+}
+@keyframes oracle {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 60%;
+  }
+}
+.line_japan {
+  height: 5px;
+  width: 97%;
+  animation: japan 7s infinite;
+}
+@keyframes japan {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 97%;
+  }
+}
+/*contact style*/
+.contact .max-width {
+  max-width: 1000px;
+}
+.contact .contact_content .column_left,
+.contact .contact_content .column_right {
+  width: calc(50% - 30px); /*화면기준 반으로해서 30px만큼 뺀값*/
+}
+.contact .contact_content .column_left .text {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 800;
+}
+.contact .contact_content .column_left p {
+  text-align: justify;
+}
+.contact .contact_content .column_left .icons {
+  margin: 10px 0;
+}
+.contact .contact_content .row {
+  display: flex;
+  height: 65px;
+  align-items: center;
+}
+.contact .contact_content .row .info {
+  margin-left: 30px;
+}
+.contact .contact_content .row i {
+  font-size: 25px;
+  color: rgb(232, 183, 191);
+}
+.contact .contact_content .info .head {
+  font-weight: 600;
+}
+.contact .right form .fields {
+  display: block;
+}
+.contact .contact_content .column_right {
+  align-items: center;
+  justify-content: space-between;
+}
+.contact .contact_content .column_right .text {
+  font-family: "Montserrat";
+  font-size: 20px;
+  font-weight: 800;
+  padding-bottom: 20px;
+}
+.field_name input,
+.field_email input,
+.field_mes textarea {
+  width: 100%;
+  margin: 3px 0;
+}
+.button {
+  color: rgb(137, 136, 136);
+}
+
+/* 반응형 사이트로 만들기*/
+
+/*테블릿형*/
+@media (max-width: 980px) {
+  /*nav home*/
+
+  .max-width {
+    padding: 0 50px;
+    margin-top: 30px;
+  }
+  .navbar .logo a {
+    font-size: 35px;
+  }
+  .navbar .menu li a {
+    font-size: 13px;
+  }
+  .home .home-content .text-1 {
+    font-size: 14px;
+    writing-mode: vertical-rl;
+    order: 3;
+  }
+  .home .home-content .text-2 {
+    font-size: 30px;
+    writing-mode: vertical-rl;
+    order: 2;
+  }
+  .home .home-content .text-2 span {
+    font-size: 40px;
+  }
+  /*about*/
+  .max-width {
+    max-width: 800px;
+  }
+
+  .about .about_content .column {
+    width: 50%;
+  }
+  .about .about_content .column_left {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto 60px;
+  }
+  .about .about_content .column_right {
+    flex: 100%;
+  }
+  .about .about_content .column_left img {
+    height: 400px;
+    width: 400px;
+  }
+  /*skill*/
+  .skills .skills_content .column_left .text {
+    font-size: 20px;
+  }
+}
+
+/*모바일*/
+@media (max-width: 630px) {
+  .max-width {
+    padding: 0 50px;
+    margin-top: 30px;
+  }
+  .menu {
+    position: fixed;
+    height: 60%;
+    width: 100%;
+    left: 0;
+    top: 0;
+    background-color: #f9f9f9;
+    text-align: center;
+    padding-top: 60px;
+
+    display: none;
+  }
+  .navbar .menu li {
+    display: block;
+  }
+  .navbar .menu li a {
+    display: inline-block;
+    margin: 20px 0;
+    font-size: 25px;
+  }
+  .menu_btn {
+    display: block;
+    z-index: 999;
+  }
+  .menu.active {
+    display: inline-block;
+  }
+  /*home*/
+  .home .max-width {
+    display: flex;
+  }
+  .about .about_content .column_right .text {
+    font-size: 25px;
+  }
+  /*skiis*/
+  .skills .skills_content .column_left,
+  .skills .skills_content .column_right {
+    width: 100%;
+    margin-bottom: 50px;
+  }
+  .contact .contact_content .column_left,
+  .contact .contact_content .column_right {
+    width: 100%;
+    margin-bottom: 30px;
+  }
+}
+
+.invisible {
+  opacity: 0;
+  transition: opacity 2s ease;
+}
+.visible {
+  opacity: 1;
+  transition: opacity 2s ease;
+}
