@@ -140,10 +140,7 @@ section {
   align-items: center;
   justify-content: center;
 }
-.nav_home {
-  width: 100vw;
-  height: 100vh;
-}
+
 .home .home-content {
   display: flex;
   font-family: "Kiwi Maru";
@@ -173,7 +170,7 @@ section {
 }
 .about .max-width {
   width: 100vw;
-  height: 100vh;
+  height: 120vh;
 }
 .about .about_content .column_left img {
   height: 600px;
