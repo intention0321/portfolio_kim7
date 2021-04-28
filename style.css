@@ -133,6 +133,7 @@ section {
   font-size: 23px;
   cursor: pointer;
 }
+
 /*home style*/
 .home {
   display: flex;
@@ -162,7 +163,10 @@ section {
 .home .home-content .text-2 span {
   font-size: 50px;
 }
-
+.nav_home {
+  width: 100vw;
+  height: 100vh;
+}
 /*about style*/
 
 #about {
