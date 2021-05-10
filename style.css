@@ -150,18 +150,18 @@ section {
 }
 
 .home .home-content .text-1 {
-  font-size: 18px;
+  font-size: 2.5vh;
   writing-mode: vertical-rl;
   order: 3;
   padding: 5px;
 }
 .home .home-content .text-2 {
-  font-size: 30px;
+  font-size: 4.3vh;
   writing-mode: vertical-rl;
   order: 2;
 }
 .home .home-content .text-2 span {
-  font-size: 50px;
+  font-size: 7vh;
 }
 .nav_home {
   width: 100vw;
@@ -400,17 +400,17 @@ section {
     font-size: 13px;
   }
   .home .home-content .text-1 {
-    font-size: 14px;
+    font-size: 2vh;
     writing-mode: vertical-rl;
     order: 3;
   }
   .home .home-content .text-2 {
-    font-size: 30px;
+    font-size: 3.5vh;
     writing-mode: vertical-rl;
     order: 2;
   }
   .home .home-content .text-2 span {
-    font-size: 40px;
+    font-size: 6vh;
   }
   /*about*/
   .max-width {
